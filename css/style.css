@@ -378,6 +378,20 @@ nav {
   opacity: 0.5;
 }
 
+.line {
+  position: relative;
+}
+
+.line::after {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid var(--clr-graylight);
+  opacity: 0.2;
+  content: "";
+}
+
 .advantages {
   max-width: 80em;
   margin-inline: 200px;
@@ -507,7 +521,12 @@ form p {
 }
 
 .icon:hover {
-  fill: var(--clr-graylight);
+  fill: gray;
+}
+
+.location.city {
+  color: white;
+  opacity: 1;
 }
 
 .secondary-footer {
@@ -527,3 +546,4 @@ form p {
   border-bottom: 1px solid var(--clr-graylight);
   content: "";
 }
+
